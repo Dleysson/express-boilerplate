@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Dleysson/express-boilerplate/issues"
   },
-  "homepage": "https://github.com/Dleysson/express-boilerplate#readme"
+  "homepage": "https://github.com/Dleysson/express-boilerplate#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
