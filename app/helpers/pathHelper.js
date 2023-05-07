@@ -7,10 +7,16 @@ const PATH = require('path')
 const APP_DIR = PATH.dirname(require.main.filename)
 
 // routes directory path
-const routes = (path = "") => {
+exports.routes = (path = "") => {
     return APP_DIR + '/routes/' + path
 }
 
-module.exports = {
-    routes: routes
+// web controllers directory path
+exports.webControllers = (path = "") => {
+    return APP_DIR + '/app/http/controllers/web/' + path
+}
+
+// api controllers directory path
+exports.apiControllers = (path = "") => {
+    return APP_DIR + '/app/http/controllers/api/' + path
 }
